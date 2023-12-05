@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.SearchView
+
+
+            android:id="@+id/HikeSearch"
+
+
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+
+
+            app:iconifiedByDefault="false"
+
+
+            app:queryHint="Search..." />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+            <Button
+                android:id="@+id/CreateNewTracking_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/DarkBlue"
+                android:layout_marginRight="70dp"
+                android:text="Add Hike"/>
+            <Button
+                android:id="@+id/ResetHike_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/DarkBlue"
+                android:text="Reset Data"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRVHike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

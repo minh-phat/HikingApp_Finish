@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HikingApp</string>
+    <string-array name="Level_array">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Difficult</item>
+        <item>Challenge</item>
+    </string-array>
+</resources>
